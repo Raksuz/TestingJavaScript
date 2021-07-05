@@ -1,6 +1,3 @@
-import { expect } from "@jest/globals";
-import { test } from "jest-circus";
-import { describe } from "yargs";
 import { arrayFruits, arrayColors } from "../arrays";
 
 describe('Comprobamos si existe un elemento', () => {
@@ -12,5 +9,8 @@ describe('Comprobamos si existe un elemento', () => {
     });
     test('Comprobar el tamaño de un arreglo', () => {
         expect(arrayFruits()).toHaveLength(6);
+    });
+    test('Comprobar que existe un color', () => {
+        expect(arrayColors()).toContain('azul');
     });
 });
