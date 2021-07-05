@@ -13,4 +13,7 @@ describe('Comparacion de numeros', () => {
     test('Menor que o igual', () => {
         expect(numbres(2,2)).toBeLessThanOrEqual(4);
     });
+    test('Numeros Flotantes', () =>  {
+        expect(numbers(0.2,0.2)).toBeCloseTo(0.5);
+    });
 });
